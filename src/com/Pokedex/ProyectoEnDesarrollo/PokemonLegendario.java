@@ -1,8 +1,11 @@
-public class PokemonLegendario extends Pokemon {
+package com.Pokedex.ProyectoEnDesarrollo;
+
+public class PokemonLegendario extends Pokemon{
+
     protected String localizacion;
 
-    public PokemonLegendario(String nombre, String tipo, float altura,
-                             float peso, String descripcion, String localizacion) {
+    public PokemonLegendario(String nombre, String tipo,
+                             float altura, float peso, String descripcion, String localizacion) {
         super(nombre, tipo, altura, peso, descripcion);
         this.localizacion = localizacion;
     }
