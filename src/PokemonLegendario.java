@@ -11,4 +11,16 @@ public class PokemonLegendario extends Pokemon {
         super(nombre, tipo);
         this.localizacion = localizacion;
     }
+
+    @Override
+    public String toString() {
+        return "PokemonLegendario{" +
+                "nombre='" + nombre + '\'' +
+                ", tipo='" + tipo + '\'' +
+                ", altura=" + altura +
+                ", peso=" + peso +
+                ", descripcion='" + descripcion + '\'' +
+                ", localizacion='" + localizacion + '\'' +
+                '}';
+    }
 }
