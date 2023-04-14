@@ -6,7 +6,6 @@ public class ListaPokemon {
 
     protected Pokemon arrayPokemon[] = new Pokemon[1];
 
-
     int contador = 0;
 
     public void añadirPokemon(Pokemon nuevoPokemon) {
