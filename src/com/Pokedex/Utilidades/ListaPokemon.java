@@ -1,8 +1,16 @@
 package com.Pokedex.Utilidades;
 
-import com.Pokedex.ProyectoEnDesarrollo.Pokemon;
+import com.Pokedex.Pokemon;
 
 public class ListaPokemon {
 
-    protected  arrayPokemon[] = new int[Pokemon];
+    protected Pokemon arrayPokemon[] = new Pokemon[1];
+
+
+    int contador = 0;
+
+    public void añadirPokemon(Pokemon nuevoPokemon) {
+        arrayPokemon[contador] = nuevoPokemon;
+        contador++;
+    }
 }

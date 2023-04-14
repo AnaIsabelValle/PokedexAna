@@ -1,4 +1,4 @@
-package com.Pokedex.ProyectoEnDesarrollo;
+package com.Pokedex;
 
     public class Pokemon {
 
@@ -59,7 +59,7 @@ package com.Pokedex.ProyectoEnDesarrollo;
                     "nombre='" + nombre + '\'' +
                     ", tipo='" + tipo + '\'' +
                     ", altura=" + altura +
-                    ", peso=" + peso +
+                    ", peso=" + (peso != 0f ? this.peso : "?") +
                     ", descripcion='" + descripcion + '\'' +
                     '}';
         }

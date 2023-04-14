@@ -1,6 +1,8 @@
-package com.Pokedex.ProyectoEnDesarrollo;
+package com.Pokedex;
 
-public class PokemonLegendario extends Pokemon{
+import com.Pokedex.Pokemon;
+
+public class PokemonLegendario extends Pokemon {
 
     protected String localizacion;
 
