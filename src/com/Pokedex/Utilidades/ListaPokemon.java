@@ -4,12 +4,18 @@ import com.Pokedex.Pokemon.Pokemon;
 
 public class ListaPokemon {
 
-    protected Pokemon arrayPokemon[] = new Pokemon[1];
+    protected Pokemon[] pokemonArray;
+    protected int totalPokemon = 0;
 
-    int contador = 0;
+    public ListaPokemon() {
+        this.pokemonArray = new Pokemon[1];
+    }
 
     public void añadirPokemon(Pokemon nuevoPokemon) {
-        arrayPokemon[contador] = nuevoPokemon;
-        contador++;
+        Pokemon[] nuevoPokemonArray = new Pokemon[this.totalPokemon + 1];
+
+        for (int i = 0; i < this.pokemonArray.length; i++) {
+            nuevoPokemonArray[i] = this.pokemonArray[i];
+        }
     }
 }
