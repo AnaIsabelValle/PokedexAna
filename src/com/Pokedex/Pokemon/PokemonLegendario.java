@@ -23,7 +23,7 @@ public class PokemonLegendario extends Pokemon {
                 "nombre='" + nombre + '\'' +
                 ", tipo='" + tipo + '\'' +
                 ", altura=" + altura +
-                ", peso=" + peso +
+                ", peso=" + (peso != 0f ? this.peso : "?") +
                 ", descripcion='" + descripcion + '\'' +
                 ", localizacion='" + localizacion + '\'' +
                 '}';
