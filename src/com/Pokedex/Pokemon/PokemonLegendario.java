@@ -1,6 +1,6 @@
-package com.Pokedex;
+package com.Pokedex.Pokemon;
 
-import com.Pokedex.Pokemon;
+import com.Pokedex.Pokemon.Pokemon;
 
 public class PokemonLegendario extends Pokemon {
 

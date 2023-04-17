@@ -1,6 +1,6 @@
 package com.Pokedex.Utilidades;
 
-import com.Pokedex.Pokemon;
+import com.Pokedex.Pokemon.Pokemon;
 
 public class ListaPokemon {
 

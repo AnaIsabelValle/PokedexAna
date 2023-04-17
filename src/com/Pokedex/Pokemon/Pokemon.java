@@ -1,4 +1,4 @@
-package com.Pokedex;
+package com.Pokedex.Pokemon;
 
     public class Pokemon {
 

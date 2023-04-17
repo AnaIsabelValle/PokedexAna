@@ -1,5 +1,3 @@
-import com.Pokedex.Pokemon;
-
 import java.util.Scanner;
 
 public class Main {
@@ -34,6 +32,8 @@ public class Main {
         Pokemon anapokemon = new Pokemon("Bulbasur",
                 "seed", 2.04f, 15.01f,"A strange");*/
 
-    }
+            }
 
+        }
+    }
 }
