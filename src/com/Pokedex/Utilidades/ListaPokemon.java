@@ -18,4 +18,23 @@ public class ListaPokemon {
             nuevoPokemonArray[i] = this.pokemonArray[i];
         }
     }
+
+    public void eliminarPokemon(Pokemon nombre) {
+        boolean encontrado = false;
+        for (int i = 0; i < this.pokemonArray.length ; i++) {
+            if (this.pokemonArray[i].getNombre().equalsIgnoreCase(Pokemon nombre)) {
+                for (int j = i; j < this.pokemonArray.length - 1; j++) {
+                    pokemonArray[j] = pokemonArray[j + 1];
+                }
+                pokemonArray--;
+                encontrado = true;
+                break;
+            }
+        }
+        if (encontrado) {
+            System.out.println("El Pokémon ha sido eliminado de la lista.");
+        } else {
+            System.out.println("El Pokémon no ha sido encontrado en la lista.");
+        }
+    }
 }
