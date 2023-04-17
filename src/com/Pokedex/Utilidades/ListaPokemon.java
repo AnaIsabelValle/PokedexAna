@@ -37,4 +37,14 @@ public class ListaPokemon {
             System.out.println("El Pokémon no ha sido encontrado en la lista.");
         }
     }
+
+    public void mostrar() {
+
+        System.out.println("Muestra el listado de las publicaciones");
+        for (int i = 0; i < pokemonArray.length; i++) {
+            if (pokemonArray[i] != null) {
+                System.out.println(pokemonArray[i]);
+            }
+        }
+    }
 }
