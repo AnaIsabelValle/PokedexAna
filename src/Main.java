@@ -76,12 +76,40 @@
                         String nombreCapturar = teclado.nextLine();
 
                         // Buscamos el pokemon en la lista de avistados
-                        Pokemon pokemonCapturar = avistados.buscarPokemon(nombreCapturar);
+                        ListaPokemon pokemonCapturar = avistados.buscarPokemon(pokemonCapturar);
 
-                        if (pokemonCapturar == null) ;
-
+                        ListaPokemon pokemonCapturar = avistados.buscarAvistamiento(nombreCapturar);
+                        if (pokemonCapturar != null) {
+                            System.out.println("Introduzca el peso del pokemon:");
+                            float peso = teclado.nextFloat();
+                            System.out.println("Introduzca la altura del pokemon:");
+                            float altura = teclado.nextFloat();
+                            System.out.println("Introduzca la descripción del pokemon:");
+                            String descripcion = teclado.nextLine();
+                            teclado.nextLine();
+                            pokemon1.agregarCapturado(new PokemonCapturado(pokemonCapturar.getNombre(), pokemonCapturar.getTipo(), peso, altura, descripcion));
+                            pokemon1.eliminarAvistamiento(pokemonCapturar);
+                        } else {
+                            System.out.println("El pokemon no ha sido avistado.");
+                        }
+                        break;
+                    case "d":
+                        System.out.println("Lista de pokemon avistados:");
+                        pokemon1.mostrarAvistamientos();
+                        break;
+                    case "e":
+                        System.out.println("Lista de pokemon capturados:");
+                        pokemon1.mostrarCapturados();
+                        break;
+                    case "f":
+                        System.out.println("Cerrando Pokedex");
+                        return;
+                    default:
+                        System.out.println("Opción no válida.");
+                        break;
                 }
             }
         }
     }
+
 
