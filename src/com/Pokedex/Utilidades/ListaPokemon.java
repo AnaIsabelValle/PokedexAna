@@ -17,16 +17,19 @@ public class ListaPokemon {
         for (int i = 0; i < this.pokemonArray.length; i++) {
             nuevoPokemonArray[i] = this.pokemonArray[i];
         }
+        pokemonArray [totalPokemon] = nuevoPokemon;
+        totalPokemon ++;
+        System.out.println( nuevoPokemon.getNombre() + " ha sido añadido a la lista de Pokemon");
     }
 
     public void eliminarPokemon(Pokemon nombre) {
         boolean encontrado = false;
-        for (int i = 0; i < this.pokemonArray.length ; i++) {
-            if (this.pokemonArray[i].getNombre().equalsIgnoreCase(Pokemon nombre)) {
-                for (int j = i; j < this.pokemonArray.length - 1; j++) {
+        for (int i = 0; i < totalPokemon ; i++) {
+            if (this.pokemonArray[i].getNombre().equals(nombre)) {
+                for (int j = i; j < totalPokemon - 1; j++) {
                     pokemonArray[j] = pokemonArray[j + 1];
                 }
-                pokemonArray--;
+                totalPokemon--;
                 encontrado = true;
                 break;
             }
