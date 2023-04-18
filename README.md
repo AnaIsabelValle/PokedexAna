@@ -1,1 +1,1 @@
-# TutorialGitProg
+# Proyecto Pokedex incompleto.
