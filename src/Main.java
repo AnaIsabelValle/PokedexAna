@@ -59,7 +59,7 @@ public class Main {
                     String nombreCapturar = teclado.nextLine();
 
                     // Buscamos el pokemon en la lista de avistados
-                    Pokemon pokemonCapturar = avistados.buscarPokemon(nombreCapturar);
+                    ListaPokemon pokemonCapturar = avistados.buscarPokemon(nombreCapturar);
 
                     if (pokemonCapturar == null) ;
 
