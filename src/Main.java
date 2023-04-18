@@ -1,5 +1,6 @@
 import com.Pokedex.Pokemon.Pokemon;
 import com.Pokedex.Pokemon.PokemonLegendario;
+import com.Pokedex.PokemonLegendario;
 import com.Pokedex.Utilidades.ListaPokemon;
 import java.util.Scanner;
 public class Main {
@@ -59,13 +60,8 @@ public class Main {
                     String nombreCapturar = teclado.nextLine();
 
                     // Buscamos el pokemon en la lista de avistados
-                    Pokemon pokemonCapturar = avistados.buscarPokemon(nombreCapturar);
+                    ListaPokemon pokemonCapturar = avistados.buscarPokemon(nombreCapturar);
 
-                    if (pokemonCapturar == null) ;
-
-                    ListaPokemon pokemonCapturar = avistados.buscarPokemon(pokemonCapturar);
-
-                    ListaPokemon pokemonCapturar = avistados.buscarAvistamiento(nombreCapturar);
                     if (pokemonCapturar != null) {
                         System.out.println("Introduzca el peso del pokemon:");
                         float peso = teclado.nextFloat();
